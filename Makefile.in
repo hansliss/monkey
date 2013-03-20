@@ -43,7 +43,7 @@ all: $(TARGETS)
 
 install: all
 	$(top_srcdir)/mkinstalldirs $(bindir)
-	$(INSTALL) $(TARGET) $(bindir)/$(TARGET)
+	$(INSTALL) $(TARGETS) $(bindir)/
 ##	$(top_srcdir)/mkinstalldirs $(mandir)/man1
 ##	$(INSTALL) $(MAN) $(mandir)/man1/$(MAN)
 
@@ -56,7 +56,7 @@ $(TARGET2): $(OBJS2)
 $(OBJS): $(SOURCES)
 
 clean:
-	/bin/rm -f $(TARGET) *.o core $(PRODUCT)-$(VERSION)-*.tar.gz*
+	/bin/rm -f $(TARGETS) *.o core $(PRODUCT)-$(VERSION)-*.tar.gz*
 
 distclean: clean config-clean
 
