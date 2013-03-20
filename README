@@ -1,0 +1,5 @@
+Simple base64 encoder/decoder.
+Usage:
+	Encode the contents of a file:	b64 -f <file>
+	Decode a short base64 string:	b64 -d [-b] <string>
+... where -b produces a binary output. Otherwise a hexdump of the result is printed.
