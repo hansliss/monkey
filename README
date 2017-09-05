@@ -1,5 +1,2 @@
-Simple base64 encoder/decoder.
-Usage:
-	Encode the contents of a file:	b64 -f <file>
-	Decode a short base64 string:	b64 -d [-b] <string>
-... where -b produces a binary output. Otherwise a hexdump of the result is printed.
+Simple text mangler based on an article in Scientific American (vol 249, no 5, Nov 1983, pages 18-28: "Computer Recreations - A progress report on the fine art of turning literature into drivel" by Brian Hayes)
+
